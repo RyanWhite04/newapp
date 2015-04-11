@@ -11,7 +11,7 @@ p{
 </head>
 <body>
   <p>
-    <%=h @sentence %>
+    <a href="mailto:<%= @email %>?subject=DO THIS NOW!!!&body=<%=h @body %>">Send This Email To Your Employee</a>
   </p>
 </body>
 </html>

@@ -187,10 +187,12 @@ end
 
 post '/' do
   name = params[:name]
+  email = params[:email]
   verb = verbs.sample
   adjective = adjectives.sample
   noun = nouns.sample
-  @sentence = "#{name}, #{verb.capitalize} the #{adjective} #{noun}!"
+  @body = "#{name}, #{verb.capitalize} the #{adjective} #{noun}!"
+  @email = "#{email}"
   erb :results
 end
 
