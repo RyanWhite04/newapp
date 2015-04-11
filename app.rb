@@ -1,6 +1,4 @@
 require 'sinatra'
-require 'faker'
-require 'rack'
 
 helpers do
   include Rack::Utils
